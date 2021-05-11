@@ -1,49 +1,53 @@
-.home{
+.home {
   width: 100vw;
   height: 100vh;
 
 }
 
-.headerHome{
+.headerHome {
   top: 0;
   left: 0;
   height: 0;
   width: 100%;
-  height: 20%;
+  height: 15%;
   /* position: fixed; */
-  background-color: #303030;
+  background-color: #111111;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 
 }
 
-.headerIndex{
+.headerIndex {
   width: 100%;
   height: 80%;
   display: flex;
   justify-content: space-between;
   align-items: center;
- 
+
 
 }
-.logoContainer{
+
+.logoContainer {
   width: 50%;
   height: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  margin-left: 5px;
 }
 
-.logoHeader{
-  width: 40%;
+.logoHeader {
+  width: 20%;
   height: 90%;
-  background-color: gray;
   margin-left: 25px;
   border-radius: 0.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.searchContainer{
+.searchContainer {
   width: 50%;
   height: 100%;
   display: flex;
@@ -53,39 +57,36 @@
 
 }
 
-.inputText{
+.inputText {
   border: none;
-  border-radius: 0.5em;
+  border-radius: 5px;
   width: 45%;
   height: 50%;
-  font-size: 2.1rem;
-  padding-left: 10px;
+  font-size: 1.5rem;
+  padding-left: 12px;
   margin-right: 15px;
-  background-color: rgba(128, 128, 128, 0.521);
-  
-  color: #FFF
+  background-color: rgba(80, 80, 80, 0.521);
 
+  color: #FFF
 }
 
-.headerLegend{
+.headerLegend {
   width: 100%;
   height: 50%;
-  background-color: #303030;
+  background-color: #1b1b1b;
   bottom: 0;
-  border-top: solid;
-  border-bottom: solid;
+  border-top: ridge;
+  border-bottom: ridge;
   border-width: 2.5px;
   border-color: gray;
-
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-
 }
 
-.containerInformation{
+.containerInformation {
   width: 100%;
-  height: 72%;
+  height: 80%;
   background-image: url("../../assets/fundo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -95,10 +96,10 @@
   align-items: center;
 }
 
-.footerHome{
+.footerHome {
   width: 100vw;
   height: 8%;
-  background-color: #303030;
+  background-color: #0f0f0f;
   border-top: solid;
   border-width: 1.5px;
   border-color: gray;
@@ -107,42 +108,42 @@
   align-items: center;
 }
 
-.titlePage{
+.titlePage {
   display: flex;
   flex-direction: column;
-  margin-left: 15%;
   justify-content: space-evenly;
   align-items: center;
 }
 
-.legendText{
+.legendText {
   color: #BEBABA;
-  font-family: 'Fugaz One', cursive;
-  font-size: 2.9rem;
+  font-family: monospace;
+  font-size: 1.8rem;
+  position: relative;
 }
 
-.containerContent{
+.containerContent {
   width: 90%;
   height: 90%;
   display: flex;
-  
+
   justify-content: space-evenly;
   align-items: center;
 }
 
 
-.contentIndex{
-  background-color: gray;
+.contentIndex {
+  background-color: #0f0f0f81;
   width: 60%;
-  border-radius: 1em;
+  border-radius: 5px;
   height: 100%;
   display: flex;
   flex-direction: column;
-  
-  
+
+
 }
 
-.contentSecundary{
+.contentSecundary {
 
   width: 30%;
   height: 100%;
@@ -150,85 +151,45 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
-  
+
+
 }
-.contentItem1{
+
+
+.contentItem {
   width: 90%;
   height: 30%;
-  border-radius: 1em;
-  background-color: gray;
-
+  border-radius: 5px;
+  background-color: #0f0f0f;
 }
 
-.contentItem{
-  width: 90%;
-  height: 30%;
-  border-radius: 1em;
-  margin-top: 10px;
-  background-color: gray;
-}
-
-.ImgIndex{
+.scrollContent {
   width: 100%;
   height: 100%;
-  border-radius: 1em;
+  overflow-y: scroll;
+}
+
+.scrollContent::-webkit-scrollbar {
   position: relative;
-  z-index: 1;
+  right: -5px;
+  height: 4px;
+  width: 8px;
 }
 
-.contentTitleContainer{
-  width: 54%;
-  height: 13%;
-  position: absolute;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.534);
-  padding: 15px;
+.scrollContent::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px grey;
+  border-radius: 5px;
+  display: none;
+  position: relative;
+  right: -5px;
 }
 
-.contentTitleItem{
-  width: 24.4%;
-  height: 10%;
-  position: absolute;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  border-top-left-radius: 1em;
-  border-top-right-radius: 1em;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.534);
-  padding: 5px;
-
+.scrollContent::-webkit-scrollbar-thumb {
+  background: rgb(56, 56, 56);
+  border-radius: 4px;
+  position: relative;
 }
 
-.titleIndex{
-  font-size: 4.4rem;
-  color: #aaa5a5;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+.scrollContent::-webkit-scrollbar-thumb:hover {
+  background: rgb(41, 41, 41);
 }
-
-.titleItem{
-  font-size: 2.4rem;
-  color: #aaa5a5;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-}
-
-
-.textLegend{
-  font-size: 1.4rem;
-  color: #aaa5a5;
-  padding-top: 5px;
-  font-family: Arial, Helvetica, sans-serif;
-
-
-}
-
-
-
