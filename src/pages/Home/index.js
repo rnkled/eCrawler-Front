@@ -154,7 +154,7 @@ function Home() {
 
 
       <div className="footerHome">
-
+        <p> APS 05 - Web Crawler || Pedro Henrique | Kener Wendel | Malthus Cunha | Gabriel Greque | Reginaldo Minervino || Code Kingss </p>
 
       </div>
 
