@@ -16,7 +16,6 @@ function Noticia({ noticia }) {
                 <a href={noticia.link}>
                     <Title>{noticia.titulo}</Title>
                 </a>
-                {noticia.descricao && <Text>{noticia.descricao}</Text>}
 
             </Column>
         </Row>
